@@ -140,9 +140,9 @@ export default function InsurerDashboard() {
         {/* Quick Nav */}
         <div className="mt-6 flex gap-2 text-xs">
           <Link to="/" className="px-3 py-1.5 bg-blue-600 text-white rounded-lg">Insuree View</Link>
-          <Link to="/vehicle-safe" className="px-3 py-1.5 bg-gray-700 text-white rounded-lg">Vehicle Safe</Link>
+          <Link to="/vehicle-safe" className="px-3 py-1.5 bg-gray-700 text-white rounded-lg">Safe Mode</Link>
           <Link to="/vehicle-moderate" className="px-3 py-1.5 bg-gray-700 text-white rounded-lg">Moderate</Link>
-          <Link to="/vehicle-crash" className="px-3 py-1.5 bg-gray-700 text-white rounded-lg">Crash</Link>
+          <Link to="/vehicle-crash" className="px-3 py-1.5 bg-gray-700 text-white rounded-lg">Car Crash</Link>
         </div>
       </div>
     </div>
