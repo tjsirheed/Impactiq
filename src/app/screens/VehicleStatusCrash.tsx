@@ -4,7 +4,9 @@ import {
   Phone,
   MapPin,
   Clock,
-  AlertTriangle
+  AlertTriangle,
+  Navigation,
+  Gauge
 } from "lucide-react";
 import { Link } from "react-router";
 
@@ -51,7 +53,7 @@ export default function VehicleStatusCrash() {
           <div className="grid grid-cols-2 gap-3">
             <button className="bg-red-800 hover:bg-red-900 text-white font-bold py-4 rounded-lg transition-colors">
               <Phone className="w-6 h-6 mx-auto mb-1" />
-              <span className="text-sm">Insurer Notified</span>
+              <span className="text-sm">Call Insurer</span>
             </button>
             <button className="bg-red-800 hover:bg-red-900 text-white font-bold py-4 rounded-lg transition-colors">
               <MapPin className="w-6 h-6 mx-auto mb-1" />

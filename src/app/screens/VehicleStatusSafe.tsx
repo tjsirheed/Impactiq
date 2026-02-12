@@ -5,7 +5,6 @@ import {
   Car,
   Gauge,
   Battery,
-  Droplet,
   AlertTriangle
 } from "lucide-react";
 import { Link } from "react-router";
@@ -14,7 +13,6 @@ export default function VehicleStatusSafe() {
   const vehicleStats = [
     { label: "Speed", value: "0 mph", icon: Gauge, status: "normal" },
     { label: "Battery", value: "92%", icon: Battery, status: "normal" },
-    { label: "Oil Level", value: "Good", icon: Droplet, status: "normal" },
   ];
 
   return (
@@ -65,7 +63,7 @@ export default function VehicleStatusSafe() {
         {/* Vehicle Stats */}
         <div className="mb-6">
           <h3 className="text-white text-lg font-bold mb-3">Vehicle Diagnostics</h3>
-          <div className="grid grid-cols-3 gap-3">
+          <div className="grid grid-cols-2 gap-3">
             {vehicleStats.map((stat) => (
               <Card key={stat.label} className="bg-[#1a1a24] border-[#2a2a38] p-3">
                 <div className="flex flex-col items-center text-center">
