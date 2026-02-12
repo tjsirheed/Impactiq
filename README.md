@@ -1,7 +1,7 @@
 
-  # Multi-Screen Mobile App Design
+  # ImpactIQ
 
-  This is a code bundle for Multi-Screen Mobile App Design. The original project is available at https://www.figma.com/design/WfhIp1M89hcfGMocw4luI5/Multi-Screen-Mobile-App-Design.
+  This is a code bundle for ImpactIQ. The original project is available at https://www.figma.com/design/WfhIp1M89hcfGMocw4luI5/ImpactIQ.
 
   ## Running the code
 
