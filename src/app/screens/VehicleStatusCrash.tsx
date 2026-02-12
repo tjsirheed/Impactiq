@@ -9,6 +9,7 @@ import {
   Gauge
 } from "lucide-react";
 import { Link } from "react-router";
+import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 
 export default function VehicleStatusCrash() {
   return (
@@ -43,6 +44,52 @@ export default function VehicleStatusCrash() {
           </div>
         </Card>
 
+        {/* Map Location & Speed Detection */}
+        <div className="mb-6">
+          <h3 className="text-white text-lg font-bold mb-3">Location & Speed Detection</h3>
+          <Card className="bg-red-800/60 border-red-900 p-0 overflow-hidden">
+            <div className="relative h-48">
+              <ImageWithFallback 
+                src="https://images.unsplash.com/photo-1758872014553-f0deb7b12d58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaXR5JTIwc3RyZWV0JTIwbWFwJTIwZ3BzJTIwbmF2aWdhdGlvbnxlbnwxfHx8fDE3NzA5MjY0MDN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                alt="Map location"
+                className="w-full h-full object-cover opacity-60"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-red-900 to-transparent"></div>
+              
+              {/* Location Pin */}
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <div className="relative">
+                  <div className="absolute inset-0 bg-red-500 rounded-full animate-ping opacity-75"></div>
+                  <div className="relative p-3 bg-red-500 rounded-full border-4 border-white shadow-lg">
+                    <MapPin className="w-6 h-6 text-white" />
+                  </div>
+                </div>
+              </div>
+
+              {/* Speed & Location Info Overlay */}
+              <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-red-900 to-transparent">
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="bg-red-800/90 rounded-lg p-3 backdrop-blur-sm">
+                    <div className="flex items-center gap-2 mb-1">
+                      <Gauge className="w-4 h-4 text-white" />
+                      <p className="text-red-200 text-xs">Speed at Impact</p>
+                    </div>
+                    <p className="text-white font-bold text-lg">45 mph</p>
+                  </div>
+                  <div className="bg-red-800/90 rounded-lg p-3 backdrop-blur-sm">
+                    <div className="flex items-center gap-2 mb-1">
+                      <Navigation className="w-4 h-4 text-white" />
+                      <p className="text-red-200 text-xs">Coordinates</p>
+                    </div>
+                    <p className="text-white font-bold text-xs">37.7749° N</p>
+                    <p className="text-white font-bold text-xs">122.4194° W</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Card>
+        </div>
+
         {/* Emergency Actions */}
         <div className="mb-6 space-y-4">
           <button className="w-full bg-white hover:bg-gray-100 text-red-600 font-bold py-6 rounded-xl flex items-center justify-center gap-3 transition-colors shadow-lg text-xl">
@@ -53,7 +100,7 @@ export default function VehicleStatusCrash() {
           <div className="grid grid-cols-2 gap-3">
             <button className="bg-red-800 hover:bg-red-900 text-white font-bold py-4 rounded-lg transition-colors">
               <Phone className="w-6 h-6 mx-auto mb-1" />
-              <span className="text-sm">Insurer Notified</span>
+              <span className="text-sm">Call Insurer</span>
             </button>
             <button className="bg-red-800 hover:bg-red-900 text-white font-bold py-4 rounded-lg transition-colors">
               <MapPin className="w-6 h-6 mx-auto mb-1" />
@@ -102,6 +149,8 @@ export default function VehicleStatusCrash() {
                 <li>• Check yourself and passengers for injuries</li>
                 <li>• Move to a safe location if possible</li>
                 <li>• Turn on hazard lights</li>
+                <li>• Do not move if you suspect serious injury</li>
+                <li>• Emergency services have been automatically notified</li>
               </ul>
             </div>
           </div>
