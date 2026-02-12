@@ -102,8 +102,6 @@ export default function VehicleStatusCrash() {
                 <li>• Check yourself and passengers for injuries</li>
                 <li>• Move to a safe location if possible</li>
                 <li>• Turn on hazard lights</li>
-                <li>• Do not move if you suspect serious injury</li>
-                <li>• Emergency services have been automatically notified</li>
               </ul>
             </div>
           </div>
