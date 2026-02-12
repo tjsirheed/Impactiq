@@ -132,7 +132,7 @@ export default function VehicleStatusCrash() {
                 </div>
                 <div>
                   <p className="text-red-200 text-xs">Location</p>
-                  <p className="text-white font-bold text-sm">123 Main St, San Francisco, CA</p>
+                  <p className="text-white font-bold text-sm">13 Jakande St, Lagos, Nigeria</p>
                 </div>
               </div>
             </Card>

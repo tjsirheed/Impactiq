@@ -25,7 +25,7 @@ export default function VehicleStatusSafe() {
           </Link>
           <h1 className="text-2xl font-bold text-white">Vehicle Status</h1>
         </div>
-        <p className="text-blue-100 text-sm ml-9">Tesla Model 3 • ABC 1234</p>
+        <p className="text-blue-100 text-sm ml-9">Toyota Camry 2013 Model</p>
       </div>
 
       <div className="px-6 -mt-4">

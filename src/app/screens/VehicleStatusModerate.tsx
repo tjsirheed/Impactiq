@@ -20,7 +20,7 @@ export default function VehicleStatusModerate() {
           </Link>
           <h1 className="text-2xl font-bold text-white">Vehicle Status</h1>
         </div>
-        <p className="text-yellow-100 text-sm ml-9">Tesla Model 3 • ABC 1234</p>
+        <p className="text-yellow-100 text-sm ml-9">Toyota Camry 2013 Model</p>
       </div>
 
       <div className="px-6 -mt-4">
@@ -79,7 +79,7 @@ export default function VehicleStatusModerate() {
                 </div>
                 <div>
                   <p className="text-gray-400 text-xs">Location</p>
-                  <p className="text-white font-medium text-sm">123 Main St, San Francisco, CA</p>
+                  <p className="text-white font-medium text-sm">13 Jakande St, Lagos, Nigeria</p>
                 </div>
               </div>
             </Card>
