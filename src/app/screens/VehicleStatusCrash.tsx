@@ -100,7 +100,7 @@ export default function VehicleStatusCrash() {
           <div className="grid grid-cols-2 gap-3">
             <button className="bg-red-800 hover:bg-red-900 text-white font-bold py-4 rounded-lg transition-colors">
               <Phone className="w-6 h-6 mx-auto mb-1" />
-              <span className="text-sm">Call Insurer</span>
+              <span className="text-sm">Insurer Notified</span>
             </button>
             <button className="bg-red-800 hover:bg-red-900 text-white font-bold py-4 rounded-lg transition-colors">
               <MapPin className="w-6 h-6 mx-auto mb-1" />
@@ -149,8 +149,6 @@ export default function VehicleStatusCrash() {
                 <li>• Check yourself and passengers for injuries</li>
                 <li>• Move to a safe location if possible</li>
                 <li>• Turn on hazard lights</li>
-                <li>• Do not move if you suspect serious injury</li>
-                <li>• Emergency services have been automatically notified</li>
               </ul>
             </div>
           </div>
